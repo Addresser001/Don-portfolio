@@ -1,0 +1,289 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  /* width */
+  ::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 2px 2px 5px #1d1c1c;
+    border-radius: 100px;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #ff5c00;
+    box-shadow: inset 1px 1px 2px black;
+    border-radius: 100px;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #8efe00;
+  }
+
+  .main_container {
+    width: 100%;
+    background-color: #1d1c1c;
+
+    .introduction_section {
+      width: 100%;
+      height: 704px;
+      padding-top: 140px;
+      background-color: #101115;
+
+      .introduction_section_sub_container {
+        width: 60%;
+        margin: 0 auto;
+
+        display: flex;
+        justify-content: space-between;
+        .text_container {
+          width: 45%;
+          .mobile_nav_buttons {
+            display: none;
+          }
+          .line {
+            width: 249px;
+            height: 14px;
+            background: #ff5c00;
+            border-radius: 20px;
+          }
+          .hand_image {
+            margin: 14px 0px 6px 0px;
+          }
+          .text_header {
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 30px;
+            line-height: 131%;
+            width: 298px;
+            color: #ececec;
+            margin-bottom: 22px;
+          }
+          .i_write_code {
+            width: 337px;
+          }
+
+          .see_myworks_container {
+            width: 390px;
+            height: 305px;
+            border: 1px solid #ffffff;
+            box-sizing: border-box;
+            border-radius: 10px;
+            padding: 10px 0px 10px 0px;
+            margin-top: 43px;
+            .see_myworks_sub_container {
+              width: 372px;
+              height: 283px;
+              margin: 0 auto;
+
+              border: 1px solid #898989;
+              box-sizing: border-box;
+              border-radius: 10px;
+
+              .see_myworks_text {
+                width: 323px;
+
+                margin: 0 auto;
+                margin-top: 66px;
+                font-size: 18px;
+                line-height: 1.5;
+                color: #d0d0d0;
+              }
+
+              .see_my_works_btn {
+                width: 280px;
+                height: 51px;
+                margin-left: 45px;
+                margin-top: 30px;
+                justify-content: center;
+              }
+            }
+          }
+        }
+        .image_container {
+          width: 459px;
+          padding-top: 60px;
+          position: relative;
+
+          .square_icon {
+            position: absolute;
+            top: 90px;
+            left: -45px;
+          }
+          .profile_image {
+            width: 100%;
+            height: 602px;
+          }
+
+          .circle_icon {
+            position: absolute;
+            top: 370px;
+            right: -45px;
+          }
+
+          .triangle_icon {
+            position: absolute;
+            left: 200px;
+            bottom: -13px;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 1023px) {
+    .main_container {
+      width: 100%;
+      background-color: #1d1c1c;
+
+      .introduction_section {
+        width: 100%;
+        height: 557px;
+        padding-top: 79px;
+
+        .introduction_section_sub_container {
+          width: 85%;
+          margin: 0 auto;
+
+          display: flex;
+          justify-content: space-between;
+          .text_container {
+            width: 30%;
+
+            .text_header {
+              font-size: 25px;
+              line-height: 131%;
+              width: 298px;
+            }
+            .i_write_code {
+              font-size: 18px;
+              width: 280px;
+            }
+
+            .see_myworks_container {
+              width: 250px;
+              margin-top: 43px;
+              .see_myworks_sub_container {
+                width: 230px;
+                .see_myworks_text {
+                  width: 200px;
+                  margin: 0 auto;
+                  margin-top: 30px;
+                  font-size: 16px;
+                }
+
+                .see_my_works_btn {
+                  width: 200px;
+                  margin-left: 15px;
+                  margin-top: 30px;
+                }
+              }
+            }
+          }
+          .image_container {
+            width: 350px;
+
+            .profile_image {
+              width: 100%;
+              height: 510px;
+            }
+
+            .triangle_icon {
+              position: absolute;
+              left: 150px;
+              bottom: -13px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .main_container {
+      width: 100%;
+      background-color: #1d1c1c;
+
+      .introduction_section {
+        width: 100%;
+        height: 557px;
+        padding-top: 50px;
+
+        .introduction_section_sub_container {
+          width: 85%;
+          margin: 0 auto;
+
+          display: block;
+          .text_container {
+            width: 100%;
+            // .mobile_nav_buttons {
+            //   transform: scale(1.5);
+            //   position: fixed;
+            //   right: 25px;
+            //   color: #ff5c00 !important;
+            //   display: block;
+            //   z-index: 50;
+            // }
+            .line {
+              width: 50%;
+            }
+            .hand_image {
+              margin: 14px 0px 6px 0px;
+            }
+            .text_header {
+              font-size: 22px;
+              width: 220px;
+              margin-bottom: 22px;
+            }
+            .i_write_code {
+              width: 250px;
+              font-size: 15px;
+            }
+
+            .see_myworks_container {
+              width: 100%;
+              height: 270px;
+
+              margin-top: 43px;
+              .see_myworks_sub_container {
+                width: 93%;
+                height: 250px;
+                margin: 0 auto;
+
+                border: 1px solid #898989;
+                box-sizing: border-box;
+                border-radius: 10px;
+
+                .see_myworks_text {
+                  width: 80%;
+                  margin: 0 auto;
+                  margin-top: 30px;
+                  font-size: 15px;
+                }
+
+                .see_my_works_btn {
+                  width: 80%;
+                  height: 40px;
+                  margin-left: 20px;
+                  margin-top: 20px;
+
+                  justify-content: center;
+                }
+              }
+            }
+          }
+          .image_container {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

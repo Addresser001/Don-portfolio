@@ -1,0 +1,205 @@
+.variety_section {
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 220px;
+  .navbar_scroll_none {
+    margin: 0 auto;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 100;
+    width: 100%;
+    padding: 15px 0px;
+    background: #101115;
+    border-bottom: 1px solid #8efe00;
+    transition: 0.2s ease-in-out;
+
+    box-sizing: border-box;
+    text-align: center;
+
+    li {
+      display: inline-block;
+      a {
+        text-decoration: none;
+        margin: 0px 50px;
+        font-family: Poppins;
+        font-style: normal;
+        font-size: 18px;
+        line-height: 131%;
+
+        color: #ffffff;
+      }
+    }
+    .mobile_nav_buttons {
+      display: none;
+    }
+  }
+  .nav_bar {
+    position: relative;
+    width: 710px;
+    padding: 15px 0px;
+    background: #101115;
+    border: 4px solid #8efe00;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 0 auto;
+    transition: 0.2s ease-in-out;
+
+    li {
+      display: inline-block;
+      a {
+        text-decoration: none;
+        margin: 0px 50px;
+        font-family: Poppins;
+        font-style: normal;
+        font-size: 18px;
+        line-height: 131%;
+
+        color: #ffffff;
+      }
+    }
+    .mobile_nav_buttons {
+      display: none;
+    }
+  }
+  .variety_container {
+    .variety_list {
+      li {
+        display: block;
+      }
+      li a {
+        width: 928px;
+        text-decoration: none;
+        font-family: Poppins;
+        font-style: normal;
+        font-size: 18px;
+        line-height: 1.5;
+        color: #95b4f1;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .variety_section {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .variety_section {
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 176px;
+    .nav_bar {
+      width: 600px;
+
+      li {
+        display: inline-block;
+        a {
+          font-size: 17px;
+        }
+      }
+    }
+    .variety_container {
+      .variety_list {
+        li {
+          display: block;
+        }
+        li a {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .variety_section {
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 50px;
+
+    .navbar_scroll_none {
+      display: none;
+      // margin: 0px;
+      // position: fixed;
+      // top: 0px;
+      // left: 100px;
+      // right: 0px;
+      // z-index: 100;
+      // width: 80%;
+      // height: 100%;
+      // padding: 50px 0px;
+      // background: #101115;
+      // border-bottom: 1px solid #8efe00;
+      // transition: all 4s ease-in-out !important;
+      // overflow: hidden;
+      // box-sizing: border-box;
+      // text-align: left;
+
+      // li {
+      //   display: block;
+      //   padding: 12px;
+      //   position: relative;
+      //   top: 20px;
+      //   a {
+      //     text-decoration: none;
+      //     margin: 0px 20px;
+      //     font-family: Poppins;
+      //     font-style: normal;
+      //     font-size: 18px;
+      //     line-height: 131%;
+      //     color: #ffffff;
+      //   }
+      // }
+    }
+    .nav_bar {
+      display: none;
+      // margin: 0 auto;
+      // transition: all 4s ease-in-out !important;
+      // position: fixed;
+      // top: 0px;
+      // left: 100px;
+      // overflow: hidden;
+      // right: 0px;
+      // z-index: 100;
+      // width: 0%;
+      // height: 0%;
+      // padding: 15px 0px;
+      // background: #101115;
+      // border: 4px solid #8efe00;
+      // box-sizing: border-box;
+      // text-align: center;
+      // margin: 0 auto;
+
+      // li {
+      //   display: inline-block;
+      //   a {
+      //     text-decoration: none;
+      //     margin: 0px 50px;
+      //     font-family: Poppins;
+      //     font-style: normal;
+      //     font-size: 18px;
+      //     line-height: 131%;
+
+      //     color: #ffffff;
+      //   }
+      // }
+    }
+    .variety_container {
+      .variety_list {
+        li {
+          display: block;
+          margin-bottom: 10px;
+        }
+        li a {
+          width: 100%;
+
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}

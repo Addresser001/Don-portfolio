@@ -1,0 +1,91 @@
+.want_to_connect {
+  width: 60%;
+  margin: 0 auto;
+
+  .want_to_connect_header {
+    margin: 0px 0px 19px 0px;
+  }
+  .connect_text {
+    width: 747px;
+    margin: 0 auto;
+    line-height: 131%;
+    font-size: 18px;
+  }
+  .linkin_and_twitter_icon {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+
+    .icon {
+      width: 121px;
+      height: 121px;
+      margin: 24px 20px 0px 0px;
+    }
+  }
+
+  .daniel_don {
+    padding: 58px 0px 32px 0px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .want_to_connect {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .want_to_connect {
+    width: 85%;
+    margin: 0 auto;
+
+    .want_to_connect_header {
+      margin: 0px 0px 19px 0px;
+    }
+    .connect_text {
+      width: 640px;
+
+      font-size: 15px;
+    }
+    .linkin_and_twitter_icon {
+      .icon {
+        width: 80px;
+        height: 80px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .want_to_connect {
+    width: 85%;
+    margin: 0 auto;
+
+    .want_to_connect_header {
+      margin: 0px 0px 19px 0px;
+    }
+    .connect_text {
+      width: 100%;
+      margin: 0 auto;
+      line-height: 131%;
+      font-size: 15px;
+    }
+    .linkin_and_twitter_icon {
+      width: 100%;
+      margin: 0 auto;
+      text-align: center;
+
+      .icon {
+        width: 50px;
+        height: 50px;
+        margin: 24px 20px 0px 0px;
+      }
+    }
+
+    .daniel_don {
+      padding: 48px 0px 32px 0px;
+      text-align: center;
+    }
+  }
+}

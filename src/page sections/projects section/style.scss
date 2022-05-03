@@ -1,0 +1,305 @@
+.project_section {
+  width: 60%;
+  margin: 0 auto;
+  .npm_template {
+    width: 496px;
+    height: 164px;
+    background: #101115;
+    border: 5px solid #ffffff;
+    box-sizing: border-box;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    .image {
+      width: 58px;
+      height: 58px;
+      margin: 51px 0px 51px 27px;
+    }
+    .text {
+      width: 70%;
+      margin: 20px 27px 25px 0px;
+
+      .normal_text {
+        font-size: 16px;
+        width: 289px;
+      }
+      .text_header {
+        font-size: 18px;
+        width: 335px;
+      }
+      .view_package_btn {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12.7929px;
+        padding: 8px 40px;
+        margin-top: 10px;
+      }
+    }
+  }
+
+  .wrote_a_book_on_tech_container {
+    width: 496px;
+    height: 298px;
+    background: #101115;
+    border: 5px solid #ffffff;
+    box-sizing: border-box;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 15px;
+
+    .image {
+      width: 162px;
+      height: 229px;
+      margin: 35px;
+    }
+    .text {
+      width: 70%;
+      margin: 93px 27px 25px 0px;
+
+      .normal_text {
+        font-size: 16px;
+        width: 289px;
+      }
+      .text_header {
+        font-size: 18px;
+        width: 335px;
+      }
+      .download_a_copy_btn {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12.7929px;
+        padding: 8px 40px;
+        margin-top: 10px;
+      }
+    }
+  }
+
+  .im_allowed_to_show {
+    margin: 0 auto;
+    margin-top: 83px;
+    padding-bottom: 45px;
+    text-align: center;
+    font-size: 18px;
+    width: 669px;
+  }
+  .project_interface_container {
+    width: 100%;
+    margin: 0 auto;
+    gap: 25px;
+    display: grid;
+    grid-template-columns: auto auto;
+    .project_interface {
+      position: relative;
+      width: 496px;
+      height: 334px;
+
+      .text_container {
+        width: 100%;
+        position: absolute;
+        bottom: 0px;
+        background: linear-gradient(
+          360deg,
+          #ff5c00 -1.6%,
+          rgba(142, 254, 0, 0) 112.77%
+        );
+        .normal_text {
+          font-size: 18px;
+          padding: 0px 17px 16px 17px;
+        }
+        .text_header {
+          font-size: 20px;
+          padding: 43px 17px 0px 17px;
+        }
+      }
+    }
+  }
+
+  .where_to_find_more_things_that_i_have_done {
+    margin: 34px 0px 111px 0px;
+    .where_to_find_text {
+      font-size: 20px;
+      width: 426px;
+    }
+    .dribble_and_github_icons {
+      margin-top: 12px;
+      .icon {
+        width: 69px;
+        height: 69px;
+        margin-right: 2px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .project_section {
+    width: 85%;
+
+    .project_interface_container {
+      .project_interface {
+        position: relative;
+        width: 425px;
+        height: 300px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .project_section {
+    width: 85%;
+
+    .im_allowed_to_show {
+      margin: 0 auto;
+      margin-top: 83px;
+      padding-bottom: 45px;
+      text-align: center;
+      width: 610px;
+    }
+    .project_interface_container {
+      width: 100%;
+
+      grid-template-columns: auto auto auto auto;
+      overflow-x: scroll;
+    }
+
+    .where_to_find_more_things_that_i_have_done {
+      margin: 34px 0px 111px 0px;
+      .dribble_and_github_icons {
+        margin-top: 12px;
+        .icon {
+          width: 69px;
+          height: 69px;
+          margin-right: 2px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .project_section {
+    overflow-x: hidden;
+    width: 85%;
+
+    .npm_template {
+      width: 100%;
+      height: 164px;
+      .image {
+        display: none;
+      }
+      .text {
+        width: 80%;
+
+        margin: 20px 27px 25px 0px;
+
+        .normal_text {
+          font-size: 12px;
+          width: 100%;
+          margin: 0px 20px;
+        }
+        .text_header {
+          font-size: 13px;
+          width: 100%;
+          margin: 0px 20px;
+        }
+        .view_package_btn {
+          font-size: 12px;
+          padding: 8px 20px;
+          margin: 10px 0px 0px 20px;
+        }
+      }
+    }
+
+    .wrote_a_book_on_tech_container {
+      width: 100%;
+      height: 164px;
+      display: block;
+
+      .image {
+        display: none;
+      }
+      .text {
+        width: 80%;
+        margin: 30px 27px 25px 0px;
+
+        .normal_text {
+          font-size: 12px;
+          width: 100%;
+          margin: 0px 20px;
+        }
+        .text_header {
+          font-size: 13px;
+          width: 100%;
+          margin: 0px 20px;
+        }
+        .download_a_copy_btn {
+          font-size: 12px;
+          padding: 8px 20px;
+          margin: 10px 0px 0px 20px;
+        }
+      }
+    }
+
+    .im_allowed_to_show {
+      margin: 0 auto;
+      margin-top: 50px;
+      padding-bottom: 45px;
+      text-align: center;
+      font-size: 13px;
+      width: 85%;
+    }
+    .project_interface_container {
+      width: 100%;
+
+      grid-template-columns: auto auto auto auto;
+      overflow-x: scroll;
+
+      .project_interface {
+        position: relative;
+        width: 230px;
+        height: 230px;
+        border-radius: 5px;
+
+        .text_container {
+          width: 100%;
+          position: absolute;
+          bottom: 0px;
+          border-radius: 5px;
+          background: linear-gradient(
+            360deg,
+            #ff5c00 -1.6%,
+            rgba(142, 254, 0, 0) 100.77%
+          );
+          .normal_text {
+            font-size: 10px;
+            padding: 0px 10px 9px 10px;
+          }
+          .text_header {
+            font-size: 13px;
+            padding: 20px 10px 0px 10px;
+          }
+        }
+      }
+    }
+
+    .where_to_find_more_things_that_i_have_done {
+      margin: 34px 0px 80px 0px;
+      .where_to_find_text {
+        font-size: 16px;
+        width: 100%;
+      }
+      .dribble_and_github_icons {
+        margin-top: 12px;
+        .icon {
+          width: 50px;
+          height: 50px;
+          margin-right: 2px;
+        }
+      }
+    }
+  }
+}
