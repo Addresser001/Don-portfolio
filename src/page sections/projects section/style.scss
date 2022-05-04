@@ -141,7 +141,7 @@
 
 @media screen and (max-width: 1024px) {
   .project_section {
-    width: 85%;
+    width: 90%;
 
     .project_interface_container {
       gap: 20px;
@@ -189,6 +189,21 @@
   .project_section {
     overflow-x: hidden;
     width: 85%;
+    .header_fixed {
+      position: fixed;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      margin: 0px;
+      text-align: left;
+      text-decoration: none;
+      background: #101115;
+      border-bottom: 1px solid #8efe00;
+      transition: 0.2s ease-in-out;
+      padding: 10px 15px;
+      font-size: 13px;
+      z-index: 100;
+    }
 
     .npm_template {
       width: 100%;

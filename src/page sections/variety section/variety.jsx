@@ -1,31 +1,9 @@
 import Header from "../../components/header/header";
 import Data from "../../data/data";
 import "./style.scss";
-import { useState, useEffect, useRef } from "react";
 import { HashLink as Link } from "react-router-hash-link";
-import { AlignRightOutlined, CloseOutlined } from "@ant-design/icons";
 
-const Variety = ({ scroll, setScroll }) => {
-  const sticky = useRef(null);
-
-  const [mobileNav, setMobileNav] = useState(false);
-
-  useEffect(() => {
-    const { innerWidth: width } = window;
-    console.log(width);
-    // window.addEventListener("load", () => {
-    //   setScroll(false);
-    // });
-
-    window.addEventListener("scroll", () => {
-      if (sticky.current?.getBoundingClientRect().top <= 80) {
-        setScroll(true);
-      } else {
-        setScroll(false);
-      }
-    });
-  });
-
+const Variety = ({ scroll, sticky, varietySticky, variety }) => {
   return (
     <>
       <section className="variety_section" ref={sticky}>
@@ -51,8 +29,10 @@ const Variety = ({ scroll, setScroll }) => {
         </ul>
 
         <div className="variety_container">
-          <Header>Variety Content</Header>
-          <ul className="variety_list">
+          <Header className={variety ? "header_fixed" : " "}>
+            Variety Content
+          </Header>
+          <ul className="variety_list" ref={varietySticky}>
             {Data.map((datum) => {
               const { id, link, text, projID } = datum;
 

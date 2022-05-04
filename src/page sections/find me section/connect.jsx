@@ -3,11 +3,14 @@ import NormalText from "../../components/normal_text/normal_text";
 import linkin_icon from "../../images/linkin.png";
 import twitter_icon from "../../images/twitter.png";
 import "./style.scss";
-const Connect = () => {
+const Connect = ({ contact, contactSticky }) => {
   return (
     <>
       <section className="want_to_connect" id="connect">
-        <Header className="want_to_connect_header">Want to Connect?</Header>
+        <Header className={contact ? "header_fixed" : "header_scroll"}>
+          Want to Connect?
+        </Header>
+        <span ref={contactSticky}></span>
         <NormalText
           fontWeight="500"
           textAlign="center"

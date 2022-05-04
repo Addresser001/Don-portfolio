@@ -138,6 +138,17 @@
     }
   }
 
+  @media screen and (max-width: 1024px) {
+    .main_container {
+      .introduction_section {
+        .introduction_section_sub_container {
+          width: 90%;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+
   @media screen and (max-width: 1023px) {
     .main_container {
       width: 100%;

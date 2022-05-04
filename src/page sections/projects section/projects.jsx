@@ -7,14 +7,14 @@ import dribble_icon from "../../images/dribble.png";
 import github_icon from "../../images/github.png";
 import Button from "../../components/button/button";
 import "./style.scss";
-const ProjectsSection = () => {
+const ProjectsSection = ({ project, projectSticky}) => {
   return (
     <>
       <section className="project_section">
-        <Header>Projects</Header>
+        <Header className={project ? "header_fixed" : " "}>Projects</Header>
         <div className="npm_template">
           <img src={project_image_1} className="image" />
-          <div className="text">
+          <div className="text" ref={projectSticky}>
             <NormalText color="#FFFFFF" className="text_header">
               Published an NPM template package
             </NormalText>
@@ -85,7 +85,10 @@ const ProjectsSection = () => {
           })}
         </div>
 
-        <div className="where_to_find_more_things_that_i_have_done">
+        <div
+          className="where_to_find_more_things_that_i_have_done"
+         
+        >
           <NormalText
             className="where_to_find_text"
             color="#FFFFFF"

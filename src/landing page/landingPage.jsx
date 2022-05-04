@@ -10,11 +10,43 @@ import { BrowserRouter } from "react-router-dom";
 import Variety from "../page sections/variety section/variety";
 import ProjectsSection from "../page sections/projects section/projects";
 import Connect from "../page sections/find me section/connect";
-import { AlignRightOutlined, CloseOutlined } from "@ant-design/icons";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 
 const LandingPage = () => {
   const [scroll, setScroll] = useState(false);
+  const [project, setProject] = useState(false);
+  const [variety, setVariety] = useState(false);
+  const [contact, setContact] = useState(false);
+  const sticky = useRef(null);
+  const projectSticky = useRef(null);
+  const varietySticky = useRef(null);
+  const contactSticky = useRef(null);
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (sticky.current?.getBoundingClientRect().top <= 80) {
+        setScroll(true);
+      } else {
+        setScroll(false);
+      }
+
+      if (varietySticky.current?.getBoundingClientRect().top <= 70) {
+        setVariety(true);
+      } else {
+        setVariety(false);
+      }
+
+      if (projectSticky.current?.getBoundingClientRect().top <= 70) {
+        setProject(true);
+      } else {
+        setProject(false);
+      }
+      if (contactSticky.current?.getBoundingClientRect().top <= 230) {
+        setContact(true);
+      } else {
+        setContact(false);
+      }
+    });
+  });
 
   return (
     <BrowserRouter>
@@ -22,10 +54,6 @@ const LandingPage = () => {
         <section className=" introduction_section">
           <div className=" introduction_section_sub_container">
             <div className="text_container">
-              <AlignRightOutlined
-                className="mobile_nav_buttons"
-                onClick={() => setScroll(true)}
-              />
               <div className="line"></div>
               <img src={hand} className="hand_image" />
               <h2 className="text_header">Hey, You’ve entered Daniel’s den</h2>
@@ -106,9 +134,14 @@ const LandingPage = () => {
             </div>
           </div>
         </section>
-        <Variety scroll={scroll} setScroll={setScroll} />
-        <ProjectsSection />
-        <Connect />
+        <Variety
+          scroll={scroll}
+          sticky={sticky}
+          varietySticky={varietySticky}
+          variety={variety}
+        />
+        <ProjectsSection project={project} projectSticky={projectSticky} />
+        <Connect contact={contact} contactSticky={contactSticky} />
       </div>
     </BrowserRouter>
   );

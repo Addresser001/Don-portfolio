@@ -2,9 +2,10 @@
   width: 75%;
   margin: 0 auto;
 
-  .want_to_connect_header {
+  .header_scroll {
     margin: 0px 0px 19px 0px;
   }
+
   .connect_text {
     width: 747px;
     margin: 0 auto;
@@ -31,7 +32,7 @@
 
 @media screen and (max-width: 1024px) {
   .want_to_connect {
-    width: 85%;
+    width: 90%;
   }
 }
 
@@ -40,9 +41,6 @@
     width: 85%;
     margin: 0 auto;
 
-    .want_to_connect_header {
-      margin: 0px 0px 19px 0px;
-    }
     .connect_text {
       width: 640px;
 
@@ -62,9 +60,22 @@
     width: 85%;
     margin: 0 auto;
 
-    .want_to_connect_header {
-      margin: 0px 0px 19px 0px;
+    .header_fixed {
+      position: fixed;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      margin: 0px;
+      font-size: 13px;
+      text-align: left;
+      text-decoration: none;
+      background: #101115;
+      border-bottom: 1px solid #8efe00;
+      transition: 0.2s ease-in-out;
+      padding: 10px 15px;
+      z-index: 100;
     }
+
     .connect_text {
       width: 100%;
       margin: 0 auto;
