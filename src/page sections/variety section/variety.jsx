@@ -9,8 +9,10 @@ const Variety = ({ scroll, setScroll }) => {
   const sticky = useRef(null);
 
   const [mobileNav, setMobileNav] = useState(false);
+
   useEffect(() => {
-    // const { innerWidth: width } = window;
+    const { innerWidth: width } = window;
+    console.log(width);
     // window.addEventListener("load", () => {
     //   setScroll(false);
     // });
@@ -22,15 +24,12 @@ const Variety = ({ scroll, setScroll }) => {
         setScroll(false);
       }
     });
-  }, []);
+  });
 
   return (
     <>
       <section className="variety_section" ref={sticky}>
-        <ul
-          className={scroll ? "navbar_scroll_none" : "nav_bar"}
-          onClick={() => setScroll(false)}
-        >
+        <ul className={scroll ? "navbar_scroll_none" : "nav_bar"}>
           <li>
             {" "}
             <Link to="#variety" smooth>
