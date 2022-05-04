@@ -1,5 +1,5 @@
 .project_section {
-  width: 80%;
+  width: 75%;
   margin: 0 auto;
   .npm_template {
     width: 496px;
@@ -90,7 +90,7 @@
     margin: 0 auto;
     row-gap: 40px;
     display: grid;
-    justify-content: space-evenly;
+    justify-content: space-between;
     grid-template-columns: auto auto;
     .project_interface {
       position: relative;
