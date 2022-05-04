@@ -94,6 +94,10 @@
     grid-template-columns: auto auto;
     .project_interface {
       position: relative;
+      left: 0px;
+      right: 0px;
+      top: 0px;
+      bottom: 0px;
       width: 496px;
       height: 334px;
 
@@ -142,7 +146,6 @@
     .project_interface_container {
       gap: 20px;
       .project_interface {
-        position: relative;
         width: 425px;
         height: 300px;
       }
