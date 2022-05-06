@@ -224,7 +224,7 @@
 
       .introduction_section {
         width: 100%;
-        height: 557px;
+        height: 820px;
         padding-top: 50px;
 
         .introduction_section_sub_container {
@@ -234,16 +234,9 @@
           display: block;
           .text_container {
             width: 100%;
-            // .mobile_nav_buttons {
-            //   transform: scale(1.5);
-            //   position: fixed;
-            //   right: 25px;
-            //   color: #ff5c00 !important;
-            //   display: block;
-            //   z-index: 50;
-            // }
             .line {
               width: 50%;
+              margin-bottom: 270px;
             }
             .hand_image {
               margin: 14px 0px 6px 0px;
@@ -291,7 +284,36 @@
             }
           }
           .image_container {
-            display: none;
+            width: 230px;
+            padding-top: 60px;
+            position: relative;
+            bottom: 828px;
+
+            .square_icon {
+              position: absolute;
+              top: 90px;
+              left: -20px;
+              width: 40px;
+            }
+            .profile_image {
+              width: 100%;
+              height: 280px;
+              border-radius: 10px;
+            }
+
+            .circle_icon {
+              position: absolute;
+              top: 170px;
+              right: -25px;
+              width: 50px;
+            }
+
+            .triangle_icon {
+              position: absolute;
+              left: 80px;
+              bottom: -25px;
+              width: 40px;
+            }
           }
         }
       }

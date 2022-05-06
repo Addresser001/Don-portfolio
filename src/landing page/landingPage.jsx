@@ -12,6 +12,7 @@ import ProjectsSection from "../page sections/projects section/projects";
 import Connect from "../page sections/find me section/connect";
 import { useState, useEffect, useRef } from "react";
 
+// git push https://Addresser001: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@github.com/Addresser001/Don-portfolio.git
 const LandingPage = () => {
   const [scroll, setScroll] = useState(false);
   const [project, setProject] = useState(false);

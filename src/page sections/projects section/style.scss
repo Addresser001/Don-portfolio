@@ -209,12 +209,17 @@
       width: 100%;
       height: 164px;
       .image {
-        display: none;
+        width: 45px;
+        height: 45px;
+        margin: 51px 0px 51px 10px;
       }
       .text {
         width: 80%;
 
-        margin: 20px 27px 25px 0px;
+        margin: 20px 20px 25px 0px;
+        @media screen and (max-width: 280px) {
+          margin: 8px 20px 25px 0px;
+        }
 
         .normal_text {
           font-size: 12px;
@@ -230,36 +235,52 @@
           font-size: 12px;
           padding: 8px 20px;
           margin: 10px 0px 0px 20px;
+          @media screen and (max-width: 280px) {
+            margin: 5px 0px 0px 20px;
+          }
         }
       }
     }
 
     .wrote_a_book_on_tech_container {
       width: 100%;
-      height: 164px;
-      display: block;
+      height: 180px;
 
       .image {
-        display: none;
+        width: 100px;
+        height: 150px;
+        margin: 10px;
+        @media screen and (max-width: 280px) {
+          margin: 8px;
+        }
       }
       .text {
         width: 80%;
-        margin: 30px 27px 25px 0px;
+        margin: 30px 0px 25px 0px;
 
         .normal_text {
           font-size: 12px;
           width: 100%;
-          margin: 0px 20px;
+          margin: 0px 0px;
+          @media screen and (max-width: 280px) {
+            font-size: 10px;
+          }
         }
         .text_header {
-          font-size: 13px;
+          font-size: 12px;
           width: 100%;
-          margin: 0px 20px;
+          margin: 0px 0px 0px 0px;
+          @media screen and (max-width: 280px) {
+            width: 50%;
+          }
         }
         .download_a_copy_btn {
           font-size: 12px;
-          padding: 8px 20px;
-          margin: 10px 0px 0px 20px;
+          padding: 8px 10px;
+          margin: 10px 0px 0px 0px;
+          @media screen and (max-width: 280px) {
+            font-size: 10px;
+          }
         }
       }
     }

@@ -2,6 +2,7 @@ import Header from "../../components/header/header";
 import NormalText from "../../components/normal_text/normal_text";
 import linkin_icon from "../../images/linkin.png";
 import twitter_icon from "../../images/twitter.png";
+import { BackTop } from "antd";
 import "./style.scss";
 const Connect = ({ contact, contactSticky }) => {
   return (
@@ -29,6 +30,8 @@ const Connect = ({ contact, contactSticky }) => {
             <img src={twitter_icon} className="icon" />
           </a>
         </div>
+
+        <BackTop />
 
         <NormalText
           fontWeight="500"

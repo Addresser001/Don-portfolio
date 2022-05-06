@@ -23,7 +23,9 @@
       margin: 24px 20px 0px 0px;
     }
   }
-
+  .ant-back-top {
+    display: none;
+  }
   .daniel_don {
     padding: 58px 0px 32px 0px;
     text-align: center;
@@ -91,6 +93,14 @@
         width: 50px;
         height: 50px;
         margin: 24px 20px 0px 0px;
+      }
+    }
+
+    .ant-back-top {
+      display: block;
+
+      .ant-back-top-icon {
+        color: #ff5c00 !important;
       }
     }
 
