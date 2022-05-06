@@ -30,7 +30,7 @@ const LandingPage = () => {
         setScroll(false);
       }
 
-      if (varietySticky.current?.getBoundingClientRect().top <= 70) {
+      if (varietySticky.current?.getBoundingClientRect().top <= 20) {
         setVariety(true);
       } else {
         setVariety(false);
